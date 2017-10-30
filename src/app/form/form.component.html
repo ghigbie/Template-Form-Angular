@@ -1,5 +1,5 @@
 <div class="container">
-    <form novalidate>
+    <form novalidate #f="ngForm" (ngSubmit)="onSubmit(f)">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" 
@@ -17,7 +17,6 @@
                    name="email"
                    class="form-control"
                    placeholder="johnnydoey@gmail.com"
-                   minlength="2"
                    required
                    [(ngModel)]="user.email"
                    #userPhone="ngModel">
