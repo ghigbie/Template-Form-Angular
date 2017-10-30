@@ -6,7 +6,8 @@
                    id="name"
                    class="form-control"
                    required="true"
-                   placeholder="Mona Lisa">
+                   placeholder="Mona Lisa"
+                   [(ngModel)]="name">
         </div>
         <div class="form-group">
             <labe for="email">Email</label>
@@ -14,7 +15,8 @@
                    id="email"
                    class="form-control"
                    required="true"
-                   placeholder="johnnydoey@gmail.com">
+                   placeholder="johnnydoey@gmail.com"
+                   [(ngModel)]="email">
         </div>
         <div class="form-group">
             <label for=phone>Phone  Number</label>
@@ -22,7 +24,8 @@
                    id="phone"
                    class="form-control"
                    required="true"
-                   placeholder="703-809-9876">
+                   placeholder="703-809-9876"
+                   [(ngModel)]="phone">
         </div>
         <button type="submit">Submit</button>
     </form>
