@@ -6,20 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  
   user = {
     name:'',
     email:'',
     phone:''
   }
   
-  onSubmit(){
-    
-  }
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+  onSubmit(){}
+  constructor(){}
+  ngOnInit(){}
 
 }
