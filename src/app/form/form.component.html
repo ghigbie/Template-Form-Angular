@@ -1,5 +1,5 @@
 <div class="container">
-    <form novalidate #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <form>
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" 
@@ -22,6 +22,16 @@
                    #userPhone="ngModel">
         </div>
         <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number"
+                   name="age"
+                   class="form-control"
+                   placeholder="23"
+                   required
+                   [(ngModel)]="user.age"
+                   #userAge="ngModel">
+        </div>
+        <div class="form-group">
             <label for="phone">Phone Number</label>
             <input type="text"
                    name="phone"
@@ -32,6 +42,7 @@
                    [(ngModel)]="user.phone"
                    #user.Phone="ngModel">
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit"
+                class="btn btn-success">Submit</button>
     </form>
 </div>
