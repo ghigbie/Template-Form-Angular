@@ -10,9 +10,15 @@ export class FormComponent implements OnInit {
     name:'',
     email:'',
     phone:''
+  };
+  
+  users:object[] = [];
+  
+  onSubmit(){
+    this.users.push(this.user);
+    console.log(this.users);
   }
   
-  onSubmit(){}
   constructor(){}
   ngOnInit(){}
 
